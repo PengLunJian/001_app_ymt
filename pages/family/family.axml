@@ -1,0 +1,19 @@
+<view class="main">
+  <block a:for="{{items}}">
+    <view class="item">
+      <view class="content" data-id="{{item.id}}" onTap="detail">
+        <view class="name">{{item.name}}      
+        </view>
+        <view>与我的关系：{{item.relationship}}      
+        </view>
+        <view>证件号：{{item.number}}      
+        </view>
+      </view>
+      <view class="delete" data-id="{{item.id}}" onTap="delete"></view>
+    </view>
+  </block>
+  <view class="button">
+    <button type="primary" onTap="add">添加    
+    </button>
+  </view>
+</view>

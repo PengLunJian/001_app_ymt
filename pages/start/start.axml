@@ -1,0 +1,21 @@
+<view class="start">
+    <view class="body">
+        <view class="title">全国社会保障卡平台</view>
+        <view class="description">
+            <text>为了让您规范领取电子社保卡，需要您授权经由支付宝向</text>
+            <text>全国社会保障卡平台上传您的相片、姓名、社会保障号码</text>
+            <text>信息，进行实人认证</text>
+        </view>
+        <view class="question">
+            <radio  class="radio" name="{{agree.name}}" checked="{{agree.checked}}" />
+            <view class="radio-inner">
+                <text class="radio-text">我已阅读并同意</text>
+                <text class="radio-link">人脸识别认证服务须知</text>
+                <text class="radio-text">，并输出上述信息</text>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <button class="btn btn-confirm" type="primary">开始认证</button>
+    <view>
+</view>

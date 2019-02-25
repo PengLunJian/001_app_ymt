@@ -1,0 +1,38 @@
+page{
+  background-color: #f5f7fb
+}
+.main{
+}
+.item{
+  margin: 30rpx 30rpx;
+  background-color: white;
+  width: 690rpx; 
+  padding: 20rpx 30rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color:#979797;
+  position: relative;
+}
+.item .name{
+  color:#1e1e1e;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.button{
+  margin: 30rpx 30rpx;
+}
+.item .content{
+  z-index: 1;
+}
+.item .delete{
+  z-index: 99;
+  background-color: red;
+  position: absolute;
+  right: 0;
+  top:0;
+  height: 40px;
+  width: 40px;
+
+}

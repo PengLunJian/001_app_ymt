@@ -1,0 +1,18 @@
+<view class="home">
+  <view class="card">
+    <text class="title">易码通
+    </text>
+    <text class="number">342523199007244618
+    </text>
+    <text class="name">彭伦健
+    </text>
+  </view>
+  <view class="code">
+    <image src="../../assets/images/code.png" />
+  </view>
+  <view class="footer">
+    <list-item arrow="{{true}}">
+      <view class="inline" slot="prefix">用卡记录</view>
+    </list-item>
+  </view>
+</view>

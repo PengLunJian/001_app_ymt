@@ -1,0 +1,10 @@
+page{
+  background-color: #f5f7fb
+}
+.form{
+  margin-top: 20rpx
+}
+
+.button{
+  margin: 30rpx 30rpx;
+}

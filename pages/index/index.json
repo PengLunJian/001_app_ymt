@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "易码通",
+  "usingComponents": {
+    "list-item": "mini-antui/es/list/list-item/index"
+  }
+}

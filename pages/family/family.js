@@ -1,0 +1,45 @@
+Page({
+  data: {
+    items:[{
+      id:1,
+      name:'张一',
+      number:'330************234',
+      relationship:'父子'
+    },{
+      id:2,
+      name:'张二',
+      number:'330************234',
+      relationship:'父子'
+    },{
+      id:3,
+      name:'张三',
+      number:'330************234',
+      relationship:'父子'
+    },{
+      id:4,
+      name:'张四',
+      number:'330************234',
+      relationship:'父子'
+    },{
+      id:5,
+      name:'张五',
+      number:'330************234',
+      relationship:'父子'
+    }]
+  },
+  onLoad() {},
+  add(){
+    my.navigateTo({
+      url:'/pages/family/detail/detail?id=0'
+    });
+  },
+  detail(e){
+    my.navigateTo({
+      url:'/pages/family/detail/detail?id='+e.currentTarget.dataset.id
+    });
+  },
+  delete(e){
+    console.log(e)
+    console.log('delete')
+  }
+});

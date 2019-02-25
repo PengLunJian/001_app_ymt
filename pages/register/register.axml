@@ -1,0 +1,30 @@
+<view class="register">
+    <view class="body">
+        <list>
+            <input-item data-field="name" placeholder="姓名" type="text" value="{{name}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">姓名                                        
+            </input-item>
+            <input-item data-field="name" placeholder="证件号码" type="text" value="{{number}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">证件号码                                        
+            </input-item>
+            <input-item data-field="name" placeholder="名族" type="text" value="{{famous}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">名族                                        
+            </input-item>
+            <input-item data-field="name" placeholder="手机号码" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">手机号码                                        
+            </input-item>
+            <input-item data-field="name" placeholder="联系地址" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">联系地址                                        
+            </input-item>
+            <input-item data-field="name" placeholder="性别" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">性别                                        
+            </input-item>
+            <input-item data-field="name" placeholder="出生日期" type="text" value="{{phone}}" clear="{{true}}" onFocus="datePicker"onInput="onItemInput" onClear="onClear">出生日期                                        
+            </input-item>
+            <!-- <text onTap = 'datePicker'>测试</text> -->
+            <input-item data-field="name" placeholder="出生地址" type="text" value="{{phone}}" clear="{{true}}" disabled="true"
+onInput="onItemInput" onClear="onClear">出生地址                                        
+            </input-item>
+            <input-item data-field="name" placeholder="户籍所在地址" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">户籍所在地址                                        
+            </input-item>
+        </list>
+    </view>
+    <view class="footer">
+        <button class="btn btn-confirm" type="primary">领取电子健康卡        
+        </button>
+    </view>
+</view>

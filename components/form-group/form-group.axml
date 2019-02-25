@@ -1,0 +1,4 @@
+<view class="form-group">
+    <label class="form-label">{{label}}</label>
+    <text class="form-value">{{value}}</text>
+</view>

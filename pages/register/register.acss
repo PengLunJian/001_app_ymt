@@ -1,0 +1,11 @@
+.register {
+    width: 100%;
+}
+
+.register .footer {
+    padding: 30rpx;
+}
+
+.register .footer .btn-confirm {
+    border-radius: 10rpx;
+}

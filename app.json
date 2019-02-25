@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/scanner/scanner",
+    "pages/register/register",
+    "pages/family/family",
+    "pages/family/detail/detail"
+  ],
+  "window": {
+    "defaultTitle": "电子健康卡",
+    "titleBarColor": "#ffffff"
+  }
+}

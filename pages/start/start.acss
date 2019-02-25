@@ -1,0 +1,63 @@
+.start {
+    width: 100%;
+    display: block;
+    min-height: 100%;
+    padding: 380rpx 30rpx 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url('../../assets/images/start_bg.png');
+    background-color: #ffffff;
+}
+
+.body .title {
+    display: block;
+    margin-bottom: 20rpx;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36rpx;
+}
+
+.body .description {
+    display: block;
+    margin-bottom: 100rpx;
+    padding-bottom: 30rpx;
+    letter-spacing: 1rpx;
+    line-height: 40rpx;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26rpx;
+    color: #666666;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.body .description text {
+    display: block;
+}
+
+.body .question {
+    margin-bottom: 80rpx;
+}
+
+.body .radio-inner {
+    height: 40rpx;
+    line-height: 40rpx;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24rpx;
+    color: #818181;
+}
+
+.body .radio {
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(0.8);
+}
+
+.body .radio-inner .radio-link {
+    color: #58a9f8;
+}
+
+.footer .btn-confirm {
+    border-radius: 10rpx;
+}

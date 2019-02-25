@@ -1,0 +1,45 @@
+<view class="form">
+  <list>
+    <picker-item
+      data-field="bank"
+      placeholder="选择与我的关系"
+      value="{{bank}}"
+      onPickerTap="onPickerTap"
+    >
+      与我的关系
+    </picker-item>
+    <picker-item
+      data-field="bank"
+      placeholder="选择证件类型"
+      value="{{bank}}"
+      onPickerTap="onPickerTap"
+    >
+      证件类型
+    </picker-item>
+    <input-item
+      data-field="name"
+      placeholder="请输入证件号"
+      type="text"
+      value="{{name}}"
+      clear="{{true}}"
+      onInput="onItemInput"
+      onClear="onClear"
+    >
+      证件号
+    </input-item>
+    <input-item
+      data-field="name"
+      placeholder="请输入姓名"
+      type="text"
+      value="{{name}}"
+      clear="{{true}}"
+      onInput="onItemInput"
+      onClear="onClear"
+    >
+      姓名
+    </input-item>
+    
+  <view class="button">
+      <button type="primary" onTap="add">保存</button>
+  </view>
+</view>
