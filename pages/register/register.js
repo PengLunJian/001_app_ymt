@@ -1,4 +1,5 @@
 import * as utils from '../../utils/index';
+
 Page({
     data: {
         params: {
@@ -14,7 +15,7 @@ Page({
         }
     },
     onLoad() { },
-    datePicker() {
+    onDatePicker() {
         let date = new Date();
         my.datePicker({
             currentDate: utils.dateFormat(date),

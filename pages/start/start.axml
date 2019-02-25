@@ -17,5 +17,5 @@
     </view>
     <view class="footer">
         <button class="btn btn-confirm" type="primary">开始认证</button>
-    <view>
+    </view>
 </view>

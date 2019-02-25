@@ -1,9 +1,17 @@
 Component({
-  mixins: [],
-  data: {},
-  props: {},
-  didMount() {},
-  didUpdate() {},
-  didUnmount() {},
-  methods: {},
+    mixins: [],
+    data: {},
+    props: {
+        label: '',
+        value: '',
+        onDatePicker: 'onDatePicker'
+    },
+    didMount() { },
+    didUpdate() { },
+    didUnmount() { },
+    methods: {
+        datePicker() {
+            this.props.onDatePicker();
+        }
+    },
 });

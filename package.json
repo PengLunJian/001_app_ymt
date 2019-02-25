@@ -9,6 +9,6 @@
     "author": "Penglunjian",
     "license": "ISC",
     "dependencies": {
-        "mini-antui": "^0.4.16"
+        "mini-antui": "^0.4.18"
     }
 }

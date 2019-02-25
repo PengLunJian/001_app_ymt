@@ -1,4 +1,6 @@
-<view class="form-group">
-    <label class="form-label">{{label}}</label>
-    <text class="form-value">{{value}}</text>
+<view class="cm-input-item">
+    <view class="cm-input-line" onTap="datePicker">
+        <label class="cm-input-label">{{label}}</label>
+        <text class="cm-input-value">{{value}}</text>
+    </view>
 </view>

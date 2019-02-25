@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/scanner/scanner",
     "pages/register/register",
+    "pages/start/start",
+    "pages/index/index",
     "pages/family/family",
     "pages/family/detail/detail"
   ],
