@@ -4,14 +4,14 @@ Component({
     props: {
         label: '',
         value: '',
-        onDatePicker: 'onDatePicker'
+        onSelectValue: 'onSelectValue'
     },
     didMount() { },
     didUpdate() { },
     didUnmount() { },
     methods: {
-        datePicker() {
-            this.props.onDatePicker();
+        onSelectValue() {
+            this.props.onSelectValue();
         }
     },
 });

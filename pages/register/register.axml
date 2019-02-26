@@ -1,29 +1,71 @@
 <view class="register">
     <view class="body">
         <list>
-            <input-item data-field="name" placeholder="姓名" type="text" value="{{name}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">姓名                                                    
+            <input-item data-field="name" placeholder="姓名" type="text" value="{{name}}" clear="{{true}}"
+                        onInput="onItemInput" onClear="onClear">姓名
             </input-item>
-            <input-item data-field="name" placeholder="证件号码" type="text" value="{{number}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">证件号码                                                    
+            <input-item data-field="name" placeholder="证件号码" type="text" value="{{number}}" clear="{{true}}"
+                        onInput="onItemInput" onClear="onClear">证件号码
             </input-item>
-            <input-item data-field="name" placeholder="名族" type="text" value="{{famous}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">名族                                                    
+            <picker onChange="onChangeNation" range="{{nations}}" value="{{nationIndex}}" range-key="name">
+                <view class="cm-input-inner">
+                    <view class="cm-input-mask"></view>
+                    <input-item data-field="name" placeholder="名族" type="text" value="{{nation}}" clear="{{true}}"
+                                onInput="onItemInput" onClear="onClear">名族
+                    </input-item>
+                </view>
+            </picker>
+            <input-item data-field="name" placeholder="手机号码" type="number" value="{{phone}}" clear="{{true}}"
+                        onInput="onItemInput" onClear="onClear">手机号码
             </input-item>
-            <input-item data-field="name" placeholder="手机号码" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">手机号码                                                    
-            </input-item>
-            <input-item data-field="name" placeholder="联系地址" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">联系地址                                                    
-            </input-item>
-            <input-item data-field="name" placeholder="性别" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">性别                                                    
-            </input-item>
-
-            <form-group label="出生日期" value="出生日期" onDatePicker="onDatePicker"></form-group>
-
-            <input-item data-field="name" placeholder="出生地址" type="text" value="{{phone}}" clear="{{true}}" disabled="true" onInput="onItemInput" onClear="onClear">出生地址                                                    
-            </input-item>
-            <input-item data-field="name" placeholder="户籍所在地址" type="text" value="{{phone}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">户籍所在地址                                                    
-            </input-item>
+            <view class="cm-input-item">
+                <view class="cm-input-inner" onTap="onChangeAddress">
+                    <view class="cm-input-mask"></view>
+                    <input-item data-field="name" placeholder="联系地址" type="text" value="{{address}}" clear="{{true}}"
+                                onInput="onItemInput" onClear="onClear">联系地址
+                    </input-item>
+                </view>
+            </view>
+            <view class="cm-input-item">
+                <picker onChange="onChangeGender" range="{{genders}}" value="{{genderIndex}}">
+                    <view class="cm-input-inner">
+                        <view class="cm-input-mask"></view>
+                        <input-item data-field="name" placeholder="性别" type="text" value="{{gender}}" clear="{{true}}"
+                                    onInput="onItemInput" onClear="onClear">性别
+                        </input-item>
+                    </view>
+                </picker>
+            </view>
+            <view class="cm-input-item">
+                <view class="cm-input-inner" onTap="onChangeDate">
+                    <view class="cm-input-mask"></view>
+                    <input-item data-field="name" placeholder="出生日期" type="text" value="{{birthday}}" clear="{{true}}"
+                                onInput="onItemInput" onClear="onClear">出生日期
+                    </input-item>
+                </view>
+            </view>
+            <view class="cm-input-item">
+                <view class="cm-input-inner" onTap="onChangeBirthdayAddr">
+                    <view class="cm-input-mask"></view>
+                    <input-item data-field="name" placeholder="出生地址" type="text" value="{{birthdayAddr}}"
+                                clear="{{true}}"
+                                onInput="onItemInput" onClear="onClear">出生地址
+                    </input-item>
+                </view>
+            </view>
+            <view class="cm-input-item">
+                <view class="cm-input-inner" onTap="onChangeRegisterAddr">
+                    <view class="cm-input-mask"></view>
+                    <input-item data-field="name" placeholder="户籍所在地址" type="text" value="{{registerAddr}}"
+                                clear="{{true}}"
+                                onInput="onItemInput" onClear="onClear">户籍所在地址
+                    </input-item>
+                </view>
+            </view>
         </list>
     </view>
     <view class="footer">
-        <button class="btn btn-confirm" type="primary">领取电子健康卡                
+        <button class="btn btn-confirm" type="primary">领取电子健康卡
         </button>
     </view>
 </view>

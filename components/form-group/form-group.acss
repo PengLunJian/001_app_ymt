@@ -10,10 +10,11 @@
 
 .cm-input-label {
     min-width: 160rpx;
+    margin-right: 2px;
 }
 
 .cm-input-value {
-    letter-spacing: 3px;
-    padding-left: 24rpx;
+    padding-left: 7px;
+    font-size: 17px;
     color: #CCCCCC;
 }

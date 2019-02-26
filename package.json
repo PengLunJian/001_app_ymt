@@ -9,6 +9,8 @@
     "author": "Penglunjian",
     "license": "ISC",
     "dependencies": {
-        "mini-antui": "^0.4.18"
+        "mini-antui": "^0.4.18",
+        "mockjs": "^1.0.1-beta3",
+        "redux": "^4.0.0"
     }
 }

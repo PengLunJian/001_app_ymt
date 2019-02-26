@@ -9,3 +9,17 @@
 .register .footer .btn-confirm {
     border-radius: 10rpx;
 }
+
+.register .cm-input-inner {
+    position: relative;
+}
+
+.register .cm-input-mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

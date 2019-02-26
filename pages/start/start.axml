@@ -7,15 +7,19 @@
             <text>信息，进行实人认证</text>
         </view>
         <view class="question">
-            <radio  class="radio" name="{{agree.name}}" checked="{{agree.checked}}" />
-            <view class="radio-inner">
-                <text class="radio-text">我已阅读并同意</text>
-                <text class="radio-link">人脸识别认证服务须知</text>
-                <text class="radio-text">，并输出上述信息</text>
-            </view>
+            <radio-group class="radio-group" onChange="onChangeRadio">
+                <radio class="radio" name="{{radio.name}}"/>
+                <view class="radio-inner">
+                    <text class="radio-text">我已阅读并同意</text>
+                    <text class="radio-link">人脸识别认证服务须知</text>
+                    <text class="radio-text">，并输出上述信息</text>
+                </view>
+            </radio-group>
         </view>
     </view>
     <view class="footer">
-        <button class="btn btn-confirm" type="primary">开始认证</button>
+        <button class="btn btn-confirm" type="primary"
+                disabled="{{btnConfirm.disabled}}" onTap="onHandleConfirm">开始认证
+        </button>
     </view>
 </view>

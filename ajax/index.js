@@ -1,8 +1,9 @@
 import apis from '../apis/index';
+
 /**
- * 
- * @param {*} url 
- * @param {*} options 
+ *
+ * @param {*} url
+ * @param {*} options
  */
 const request = (url, options) => {
     const data = options.method === 'GET' ?
@@ -12,9 +13,9 @@ const request = (url, options) => {
             url: apis.baseUrl + url,
             method: options.methed,
             data: data,
-            headers: {
-                'Content-Type': 'application/json; charset=UTF-8',
-            },
+            timeout: apis.timeout,
+            headers: apis.headers,
+            dataType: apis.dataType,
             success: (res) => {
                 resolve(res);
             },
@@ -28,19 +29,26 @@ const request = (url, options) => {
     });
 };
 /**
- * 
- * @param {*} api 
- * @param {*} data 
+ *
+ * @param {*} api
+ * @param {*} data
  */
 export const get = (api, data = {}) => {
-    return request(api.url, { method: 'GET', data: data });
-}
+    return request(api.url, {method: 'GET', data: data});
+};
 /**
- * 
- * @param {*} api 
- * @param {*} options 
+ *
+ * @param {*} api
+ * @param {*} options
  */
 export const post = (api, options) => {
     const data = Object.assign(api.params, options);
-    return request(api.url, { methed: 'POST', data: data });
-}
+    return request(api.url, {methed: 'POST', data: data});
+};
+/**
+ *
+ * @param params
+ */
+export const setRequestHeader = (params) => {
+    apis.headers = Object.assign(apis.headers, params);
+};

@@ -3,7 +3,6 @@
     "usingComponents": {
         "list": "mini-antui/es/list/index",
         "input-item": "mini-antui/es/input-item/index",
-        "picker-item": "mini-antui/es/picker-item/index",
-        "form-group":"../../components/form-group/form-group"
+        "picker-item": "mini-antui/es/picker-item/index"
     }
 }
